@@ -281,7 +281,7 @@ def initialize_rag_system():
     Settings.embed_model = FastEmbedEmbedding(model_name="BAAI/bge-small-en-v1.5")
     
     # Initialize Qdrant client
-    client = QdrantClient(path="./data")
+    client = QdrantClient(path="./data2")
     vector_store = QdrantVectorStore(client=client, collection_name="02_ReRanker_RAG")
     
     # Create index
